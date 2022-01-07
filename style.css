@@ -1,0 +1,586 @@
+/* Header */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+
+.hidde{
+    display: none;
+}
+
+header nav ul{
+    margin-top: 2vh;
+    position: fixed;
+    height: 88vh;
+    background-color: white;
+}
+header nav ul li{
+    height: 10vh;
+    line-height: 10vh;
+    border-top: 2px solid grey;
+    width: 100vw;
+    text-align: center;
+}
+header nav li:last-of-type{
+    border-bottom: 2px solid grey;
+}
+
+header nav li:hover{
+    cursor: pointer;
+}
+
+button{
+    right: 0;
+    margin-right: 20px;
+    width: 10vh;
+    height: 10vh;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+button:last-of-type{
+    /* transform: translate(-20px,0); */
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    z-index: 2;
+    padding-top: 2vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img{
+    margin: auto auto auto 20px;
+    height: 5vh;
+}
+
+nav ul{
+    position: absolute;
+    top:10vh;
+}
+
+header section.banner{
+    margin-top: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 55vh;
+    background-image:url('../img/banner/machine-2592090_1280.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #92ddff;
+}
+header section.banner::after{
+    position: absolute;
+    margin-top: 12vh;
+    content: '';
+    top: 0;
+    left:0;
+    height: 55vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+header section h1{
+    z-index:1;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header section.banner a{
+    z-index:1;
+    margin-top: 5vh;
+    width: 40vw;
+    height: 8vh;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: bold;
+    line-height: 8vh;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+main section.services {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(0,0,0,0.05); */
+}
+
+main section.services div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    
+
+}
+
+main section.services div i{
+    font-size: 10vh;
+    margin:2vh;
+}
+
+
+
+main section.services div h2,
+main section.services div p {
+    text-align: center;
+    margin:2vh;
+}
+
+main section.about, main section.help{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+main section.about::before, main section.about::after{
+    content: '';
+    width: 80%;
+    border-top: 2px solid black;
+}
+
+main section.about{
+    width: 100%;
+    background-color: rgba(247,224,221,0.3);
+}
+
+main section.about h2, main section.help h2 {
+    margin: 5vh 0;
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 2vw 5vw;
+}
+
+main section.about p,main section.about ul,p {
+    margin: 2vh;
+    font-size: 12px;
+    text-align: justify;
+}
+
+main section.about p{
+    width: 70%;
+    text-align: center;
+}
+
+main section.about p{
+    text-indent: 5vw;
+}
+
+
+main section.about p:last-child, main section.help article:last-child{
+    margin-bottom: 5vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+main section.help article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1vh 0;
+    border-radius: 5px;
+    padding: 5px 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+main section.help article h3{
+    font-size: 14px;
+    width: 80%;
+    height: 6vh;
+    line-height: 6vh;
+}
+
+main section.help article button{
+    text-align: right;
+    line-height: 6vh;
+    width: 20%;
+    height: 6vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+}
+footer, form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vh 0;
+    background-color: black;
+    padding: 2vh 0;
+    color: white;
+}
+
+form{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+footer address{
+    padding: 5vh 0;
+    width: 80vw;
+}
+
+footer form label{
+    margin-right: 10vw;
+    width: 10vw;
+    font-size: 14px;
+}
+
+footer form input{
+    margin-bottom: 1vh;
+    width: 60vw;
+}
+
+footer form textarea{
+    margin-bottom: 1vh;
+}
+
+footer ul, footer address ul li a i{
+    font-size: 12px;
+    color: rgba(150,150,150,1);
+}
+
+
+footer address ul li i{
+    text-align: center;
+    margin: 1vh 5vw;
+}
+
+footer address h2{
+    font-size: 18px;
+    margin-bottom: 4vh;
+}
+
+footer address ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer address ul li strong{
+    margin-right: 10px;
+}
+
+footer address ul li span{
+    color: white;
+}
+
+.message{
+    width: 80vw;
+    height: 50vw;
+}
+
+footer address ul li i.fas,footer address ul li a i.fab{
+    margin-left: 0;
+    transition: 0.3s;
+}
+
+iframe{
+    width: 80vw;
+    height: 80vw;
+    border-radius: 5%;
+    margin-bottom: 5vh;
+}
+
+.send{
+    box-shadow: 4px 4px 5px red;
+    border: none;
+    width: 50vw;
+    padding: 2vw;
+    background-color: white;
+}
+
+form{
+    overflow: hidden;
+}
+
+footer address ul li a i:hover {
+    cursor: pointer;
+    color: rgb(25, 91, 235);
+}
+
+footer p{
+    width: 80%;
+    font-size: 10px;
+    text-align: center;
+    color: rgba(150,150,150,1);
+}
+
+@media(min-width: 640px){
+
+    header section h1{
+        font-size: 40px;
+    }
+
+    button{
+        font-size: 30px;
+    }
+
+    header section.banner a{
+        height: 10vh;
+        line-height: 10vh;
+    }
+
+    header section.banner{
+        height: 80vh;
+    }
+
+    header section.banner::after{
+        height: 80vh;
+    }
+
+
+    h2{
+        font-size: 25px;
+    }
+
+    main section.help article h3, footer address h2{
+        font-size: 20px;
+    }
+
+    main section.about p,main section.about ul,p,
+    footer form label,footer ul, footer address ul li a i, .send  {
+        font-size: 16px;
+    }
+
+
+    main section.services{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    main section.help article{
+        padding: 2vh;
+    }
+
+    main section.services div{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /*footer*/
+
+    footer {
+        justify-content: space-around;
+    }
+
+    footer address{
+        width: auto;
+        padding-top: 0;
+    }
+
+    iframe{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .message{
+        height: 10vw;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    header section.banner h1{
+        font-size: 40px;
+    }
+
+    main section.about p,main section.about ul,p,
+    footer form label,footer ul, footer address ul li a i, .send  {
+        font-size: 18px;
+    }
+
+    h2, main section.help article h3{
+        font-size: 24px;
+    }
+
+    header nav button{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        position: static;
+        height: 100%;
+    }
+
+    header nav {
+        display: flex;
+        padding: 0;
+    }
+
+    header nav ul{
+        transform: translate(-20px, 0);
+    }
+
+    header nav ul li{
+        width: 12vw;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        transition: 0.3s;
+    }
+
+    header nav ul li:last-of-type{
+        border: none;
+    }
+
+    header nav ul li:hover{
+        cursor: pointer;
+        color: red;
+    }
+    /* banner header above 1024px*/
+    header section.banner{
+        align-content: space-around;
+    }
+    header section.banner,header section.banner::after{
+        height: 90vh;
+    }
+
+    header section.banner a{
+        font-size: 30px;
+        width: 25vw;
+        height: 5vw;
+        line-height: 5vw;
+        transition: 0.4s;
+    }
+
+    header section.banner a:hover{
+        cursor: pointer;
+        background-color: rgba(255,0,0,0.7);
+        
+    }
+
+
+
+    /* footer above 1024px*/
+
+    footer{
+        padding-top: 5vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer address{
+        width: 35vw;
+    }
+
+
+
+    iframe{
+        width: 20vw;
+        height: 20vw;
+        align-self: flex-start;
+
+    }
+
+    form{
+        width: 40vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: flex-start;
+    }
+
+    .message{
+        width: 33vw;
+        height: 5vw;
+    }
+
+    footer form label{
+        width: 5vw;
+        height: 5vh;
+        margin-right: 5vw;
+        line-height: 5vh;
+    }
+
+    footer form input{
+        width: 30vw;
+        height: 5vh;
+    }
+
+    .send{
+        padding: 0;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    footer address h2{
+        font-size: 24px;
+    }
+
+    footer address {
+        padding: 0;
+        width: auto;
+    }
+
+    footer address ul li i, 
+    footer address ul li strong, footer address ul li span, 
+    footer address ul li a, footer address ul li a i{
+        font-size: 14px;
+    }
+
+}
